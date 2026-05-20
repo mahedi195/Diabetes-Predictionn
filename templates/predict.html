@@ -1,0 +1,187 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Prediction Page</title>
+
+    <style>
+        body {
+            background-image: url("{% static 'DiabetesPredictionImages/images/im2.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color:black;
+        }
+
+        table {
+            font-size: 20px;
+        }
+
+        .label {
+            text-align: right;
+            padding-right: 20px;
+            width: 250px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            width: 200px;
+            padding: 8px;
+            border: none;
+            outline: none;
+        }
+
+        .sub {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            transform: translateX(130px);
+        }
+
+        .submitButton {
+            width: 190px;
+            background-color: rgb(21, 96, 126);
+            color: white;
+            border: none;
+            font-size: 22px;
+            padding: 13px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .submitButton:hover {
+            background-color: rgb(10, 70, 95);
+        }
+
+
+        .form-box {
+            transform: translateX(-130px);
+        }
+
+        .result {
+            transform: translateX(280px);
+        }
+
+        .developer {
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .linkk {
+            text-align: right;
+        }
+
+        .linkk a{
+            font-weight: bold;
+            color:black;
+            margin-right: 50px;
+            font-size:20px;
+        }
+
+        .linkk a:hover{
+            color: rgb(218, 56, 7);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="title">Welcome to the Prediction Page</p>
+
+        <form action="result">
+            <div class="form-box">
+
+                <table>
+
+                    <tr>
+                        <td class="label">Pregnancies</td>
+                        <td><input type="text" name="n1"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Glucose</td>
+                        <td><input type="text" name="n2"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Blood Pressure</td>
+                        <td><input type="text" name="n3"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Skin Thickness</td>
+                        <td><input type="text" name="n4"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Insulin</td>
+                        <td><input type="text" name="n5"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">BMI</td>
+                        <td><input type="text" name="n6"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Diabetes Pedigree Function</td>
+                        <td><input type="text" name="n7"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">Age</td>
+                        <td><input type="text" name="n8"></td>
+                    </tr>
+
+                </table>
+
+                <div class="sub">
+                    <input type="submit" value="Predict" class="submitButton">
+                </div>
+
+                <div class="result">
+                    <H1>Result:{{result2}}</H1>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <p class="developer">This Project is developed by  Mahedi Hasan Emon</p>
+    <p class="linkk">
+        <a href="https://github.com/mahedi195" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/mahedi-hasan-emon-8745361b1" target="_blank">LinkedIn</a>
+    </p>
+
+
+
+</body>
+
+</html>
