@@ -3,7 +3,17 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
-data = pd.read_csv(r'C:\Users\user\Desktop\DiabtesPrediction\DIABETES\diabetes.csv')
+
+import os
+import pandas as pd
+
+from django.conf import settings
+
+file_path = os.path.join(settings.BASE_DIR, 'diabetes.csv')
+data = pd.read_csv(file_path)
+
+
+#data = pd.read_csv(r'C:\Users\user\Desktop\DiabtesPrediction\DIABETES\diabetes.csv')
 X = data.drop('Outcome', axis=1)
 Y = data['Outcome']
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
