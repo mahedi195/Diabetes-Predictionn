@@ -25,26 +25,26 @@ model.fit(X_train, Y_train)
 def home(request):
     return render(request, 'home.html')
 
-
 def predict(request):
     return render(request, 'predict.html')
-
-
 def result(request):
-    raw_vals = [request.GET.get(f'n{i}', '0') for i in range(1, 9)]
-    
-    vals = []
-    for val in raw_vals:
-        try:
-            vals.append(float(val) if val.strip() != "" else 0.0)
-        except ValueError:
-            vals.append(0.0)
 
-    pred = model.predict([vals])
 
-    if pred[0] == 1:
-        result_text = "Diabetic"
-    else:
-        result_text = "Non-Diabetic"
 
-    return render(request, "predict.html", {"result2": result_text})
+    val1=float(request.GET['n1'])
+    val2=float(request.GET['n2'])
+    val3=float(request.GET['n3'])
+    val4=float(request.GET['n4'])
+    val5=float(request.GET['n5'])
+    val6=float(request.GET['n6'])
+    val7=float(request.GET['n7'])
+    val8=float(request.GET['n8'])
+
+    pred=model.predict([[val1,val2,val3,val4,val5,val6,val7,val8]])
+
+    result1=""
+    if pred==['1']:
+        result1="Diabetic"
+    else : result1="Non-Diabetic"
+
+    return render(request, "predict.html" , {"result2" : result1})
