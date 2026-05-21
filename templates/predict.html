@@ -1,7 +1,3 @@
-correct it
-i want to keep input values when shows output
-
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -46,14 +42,15 @@ i want to keep input values when shows output
             padding-right: 20px;
             width: 250px;
             font-weight: bold;
-            font-size: 20px;
+            font-size:21px;
         }
 
         input {
-            width: 200px;
-            padding: 8px;
+            width: 300px;
+            padding: 10px;
             border: none;
             outline: none;
+            font-size:17px;
         }
 
         .sub {
@@ -118,70 +115,82 @@ i want to keep input values when shows output
 
         <p class="title">Welcome to the Prediction Page</p>
 
-        <form action="result">
+
+
+
+
+
+        <form action="result" method="get">
             <div class="form-box">
 
                 <table>
 
-
                     <tr>
                         <td class="label">Pregnancies</td>
-                        <td><input type="text" name="n1"></td>
+                        <td><input type="number" name="n1" value="{{n1}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Glucose</td>
-                        <td><input type="text" name="n2"></td>
+                        <td><input type="number" name="n2" value="{{n2}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Blood Pressure</td>
-                        <td><input type="text" name="n3" ></td>
+                        <td><input type="number" name="n3" value="{{n3}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Skin Thickness</td>
-                        <td><input type="text" name="n4"  ></td>
+                        <td><input type="number" name="n4" value="{{n4}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Insulin</td>
-                        <td><input type="text" name="n5" ></td>
+                        <td><input type="number" name="n5" value="{{n5}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">BMI</td>
-                        <td><input type="text" name="n6" ></td>
+                        <td><input type="number" step="any" name="n6" value="{{n6}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Diabetes Pedigree Function</td>
-                        <td><input type="text" name="n7"></td>
+                        <td><input type="number" step="any" name="n7" value="{{n7}}" required></td>
                     </tr>
 
                     <tr>
                         <td class="label">Age</td>
-
-                        <td><input type="text"  name="n8" ></td>
+                        <td><input type="number" name="n8" value="{{n8}}" required></td>
                     </tr>
-
-
-
-
 
                 </table>
 
                 <div class="sub">
+
                     <input type="submit" value="Predict" class="submitButton">
+                    <input type="button" value="Reset" class="submitButton"
+                        style="margin-left:10px;background-color:black; color: white;" onclick="
+                        document.querySelectorAll('input[type=number]').forEach(el => el.value='');
+                          document.querySelector('.result').innerHTML='<h1>Result:</h1>';">
+
+
 
                 </div>
 
                 <div class="result">
-                    <H1>Result:{{result2}}</H1>
+                    <h1>Result: {{result2}}</h1>
                 </div>
-            </div>
 
+            </div>
         </form>
+
+
+
+
+
+
 
     </div>
 
