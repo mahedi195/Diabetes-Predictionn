@@ -12,6 +12,8 @@ https://diabetes-predictionn-4.onrender.com
 ![image alt](https://github.com/mahedi195/Diabetes-Predictionn/blob/1b13bffbb84f66b1c1432d31439456b7514362ae/diabetic.png)
 
 
+![image alt](https://github.com/mahedi195/Diabetes-Predictionn/blob/a9ab4a6c44a411ad87eef2c681f4ed9ea0f13cfc/not%20diabetic.png)
+
 
 A web-based machine learning application that predicts whether a person is diabetic or not based on medical input parameters using a Logistic Regression model.
 
