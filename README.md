@@ -6,6 +6,7 @@
 https://diabetes-predictionn-4.onrender.com
 
 # Screenshorts
+![image alt](https://github.com/mahedi195/Diabetes-Predictionn/blob/e32edf01acd20f4cf8810ca7473689e9613e29a7/home.png)
 
 
 
