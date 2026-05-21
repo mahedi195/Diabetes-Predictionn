@@ -9,6 +9,7 @@ https://diabetes-predictionn-4.onrender.com
 ![image alt](https://github.com/mahedi195/Diabetes-Predictionn/blob/e32edf01acd20f4cf8810ca7473689e9613e29a7/home.png)
 
 
+![image alt](https://github.com/mahedi195/Diabetes-Predictionn/blob/1b13bffbb84f66b1c1432d31439456b7514362ae/diabetic.png)
 
 
 
