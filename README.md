@@ -1,5 +1,16 @@
 ## Diabetes Prediction Web App (Django + Machine Learning)
 
+
+## Deployment
+
+https://diabetes-predictionn-4.onrender.com
+
+# Screenshorts
+
+
+
+
+
 A web-based machine learning application that predicts whether a person is diabetic or not based on medical input parameters using a Logistic Regression model.
 
 ---
