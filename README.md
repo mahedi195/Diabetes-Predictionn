@@ -17,46 +17,23 @@ https://diabetes-predictionn-4.onrender.com
 
 A web-based machine learning application that predicts whether a person is diabetic or not based on medical input parameters using a Logistic Regression model.
 
----
 
-## 🚀 Live Demo
-https://diabetes-predictionn-3.onrender.com
----
 
 ##  Features
-- Machine Learning model (Logistic Regression)
-- Django web framework
-- Takes 8 medical inputs
-- Instant prediction (Diabetic / Non-Diabetic)
-- Simple HTML frontend
-- Deployed on Render
+- used kaggle PIMA diabetic dataset
+- used Machine Learning model (Logistic Regression)
 
----
+  
 
-## Tech Stack
+## Tools
 - Python
 - Django
-- Pandas
-- Scikit-learn
-- HTML / CSS
+- HTML , CSS
 - Render (Deployment)
 
 ---
 
-## 📂 Project Structure
-
-DIABETES/
-│── DIABETES/ # Django project settings
-│── templates/ # HTML files
-│── static/ # CSS & images
-│── diabetes.csv # Dataset
-│── manage.py
-│── requirements.txt
-
-
----
-
-## 📊 Dataset
+##  Dataset
 The dataset contains medical attributes such as:
 - Glucose level
 - Blood pressure
@@ -68,10 +45,5 @@ The dataset contains medical attributes such as:
 Target:
 - 0 → Non-Diabetic  
 - 1 → Diabetic
-
----
-
-
-## Screenshorts
 
 
