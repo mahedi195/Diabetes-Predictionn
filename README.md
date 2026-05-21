@@ -5,8 +5,7 @@ A web-based machine learning application that predicts whether a person is diabe
 ---
 
 ## 🚀 Live Demo
- https://diabetes-predictionn-projectt.onrender.com
-
+https://diabetes-predictionn-3.onrender.com
 ---
 
 ##  Features
